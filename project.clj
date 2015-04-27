@@ -1,4 +1,4 @@
-(defproject lein-var-file "0.3.0"
+(defproject lein-var-file "0.3.1"
   :description "Create a file containing the current environment variables"
   :url "https://github.com/orend/lein-var-file"
   :license {:name "Eclipse Public License"
