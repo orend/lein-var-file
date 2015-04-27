@@ -1,6 +1,6 @@
 # lein-var-file
 
-A Leiningen plugin to do many wonderful things.
+A Leiningen plugin to create an environment variables file. Works great with [environ](https://github.com/weavejester/environ).
 
 ## Usage
 
@@ -10,10 +10,13 @@ Run this
 
     $ lein var-file
 
-and a file called .env-vars will get generated, containing all current environemnt variables in this format:
+and a file called .env-vars will get generated, containing all current key-value pairs in the ```:env``` key in the current profile in the following format:
 
+```
 ENV_VAR1=1
 ENV_VAR2=2
+```
+This plugin integrates well with [environ](https://github.com/weavejester/environ), which puts all environemnt variables, the settings in ```project.clj``` and ```profiles.clj``` in the ```:env``` key of the current profile. Environ generates a ```.lein-env``` file that contains a clojure map where this plugin creates a file with the same key-value pairs but in a different format that's more convenient for working with, say, Docker containers. 
 
 ## License
 
