@@ -4,7 +4,7 @@ A Leiningen plugin to do many wonderful things.
 
 ## Usage
 
-Put `[lein-var-file "0.2.0"]` into the `:plugins` vector of your project.clj.
+Put `[lein-var-file "0.3.0"]` into the `:plugins` vector of your project.clj.
 
 Run this
 
